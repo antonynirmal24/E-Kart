@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1 style="background-color:#3342FF;"> E-KART</h1>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.showEle{
+	display: none;
+}
+</style>
+<script type="text/javascript">
+	function showList(){
+		alert('hi');
+		var list = document.getElementBy("popUpList");
+		list.classList.add("showEle");
+	}
+
+</script>
+</head>
+<body>
+
+<div id="popUpList">
+<ul>
+	<li>Samsung</li>
+	<li>Sony</li>
+	<li>Motorola</li>
+	<li>RedMi</li>
+</ul>
+</div>	
+
+<div class="topnav">
+  <a class="active" id='mobileBtn' onclick="showList()" href="#mobile">MOBILE</a>
+  <a href="#laptop">LAPTOP</a>
+  <a href="#tablet">TABLET</a>
+  <a href="#tv">TV</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2></h2>
+  <p></p>
+</div>
+</body>
+</html>

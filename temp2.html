@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+	 	 $("#mobile").click(function(){
+	  		alert('hi');
+	   	 $("#mlist").show();
+	   	$("#c").text("Text is changd");
+	 	});
+
+	    $("#opts").click(function(){
+	    	alert("sony");
+	    $("#c").text("You are looking for Sony Mobiles.");
+	  		});
+			});
+		</script>
+	</head>
+<body>
+
+<div id="mlist" style="display: none">
+	<ul>
+		<li>Apple</li>
+		<li>OnePlus</li>
+		<li>Samsung</li>
+	</ul>
+</div>
+
+<h1>E-KART</h1><hr>
+
+ <table border='1'>
+	<tr><td><div id="mobile">MOBILE</div></td>
+	<td><div id="home">LAPTOP</div></td>
+	<td><div id="home">TV</div></td></tr>
+</table> 
+
+<br>
+<div id="c">results</div>
+
+</body>
+</html>

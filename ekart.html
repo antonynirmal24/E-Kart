@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<body bgcolor="#808080">
+<h1><font color="white">E-KART</font></h1><hr>
+<div class="dropdown">
+  <button class="dropbtn">MOBILE</button>
+    <div class="dropdown-content">
+      <a href="#">APPLE</a>
+      <ul>iPhone XS </ul>
+      <a href="#">SAMSUNG</a>
+      <a href="#">MI</a>
+      <a href="#">OPPO</a>
+      <a href="#">VIVO</a>
+      </div>
+    </div>
+<div class="dropdown">
+  <button class="dropbtn">LAPTOP</button>
+    <div class="dropdown-content">
+      <a href="#">HP</a>
+      <a href="#">DELL</a>
+      <a href="#">ASUS</a>
+      <a href="#">TOSHIBA</a>
+      <a href="#">LENOVO</a>
+      </div>
+    </div>
+<div class="dropdown">
+  <button class="dropbtn">TABLET</button>
+    <div class="dropdown-content">
+      <a href="#">APPLE</a>
+      <a href="#">SAMSUNG</a>
+      <a href="#">LENOVO</a>
+      <a href="#">IBALL</a>
+      <a href="#">SONY</a>
+       </div>
+    </div>
+  <div class="dropdown">
+  <button class="dropbtn">MEN</button>
+    <div class="dropdown-content">
+      <a href="#">T-SHIRTS</a>
+      <a href="#">SHIRTS</a>
+      <a href="#">JEANS</a>
+      <a href="#">TROUSERS</a>
+      <a href="#">TRACKS</a>
+       </div>
+    </div>
+  <div class="dropdown">
+  <button class="dropbtn">WOMEN</button>
+    <div class="dropdown-content">
+      <a href="#">SAREES</a>
+      <a href="#">T-SHIRTS</a>
+      <a href="#">JEANS</a>
+      <a href="#">SALWARS</a>
+      <a href="#">CHUDIDARS</a>
+       </div>
+    </div>
+  <div class="dropdown">
+  <button class="dropbtn">KITCHEN</button>
+    <div class="dropdown-content">
+      <a href="#">RICE-COOKER</a>
+      <a href="#">MICROWAVE-OVEN</a>
+      <a href="#">ROTI-MAKER</a>
+      <a href="#">KETTLE</a>
+      <a href="#">BOILER</a>
+       </div>
+    </div>
+    <div class="header">
+    <div class="search_bar">
+        <input type="text" name="search" value="search">
+    </div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img_galaxy_m30.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img_galaxy_m10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img_realme_wide.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="img_oneplus_wide.jpg" style="width:100%">
+  </div>
+</div>
+<br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+  <script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+      }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
